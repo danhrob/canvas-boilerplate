@@ -1,6 +1,24 @@
-alert('test3');
+//import utils from './js/utils';
 
-import utils from './utils';
+//alert('random number: ');
+//alert(randomIntFromRange(1,100));
+
+function randomIntFromRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function randomColor(colors) {
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+
+function distance(x1, y1, x2, y2) {
+    const xDist = x2 - x1;
+    const yDist = y2 - y1;
+
+    return Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2));
+}
+  
+
 
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
@@ -24,7 +42,7 @@ addEventListener('mousemove', (event) => {
 addEventListener('resize', () => {
   canvas.width = innerWidth;
   canvas.height = innerHeight;
-
+//lert("resize");
   init();
 });
 

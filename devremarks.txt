@@ -1,0 +1,7 @@
+working only version:
+npm install node@16.13.1
+
+version:
+Node.js v18.12.1
+had to be uninstalled> npm uninstall node
+
