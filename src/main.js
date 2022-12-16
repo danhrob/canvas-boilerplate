@@ -134,6 +134,7 @@ function animate() {
    //circle1.draw();
     c.fillText('nenaraž do čáry ani do stěny', mouse.x, mouse.y);
     objects.forEach(object => {
+        objects.forEach(object => {
     object.update();
    });
 }
