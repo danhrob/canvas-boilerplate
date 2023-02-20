@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="31.412251mm"
+   height="27.799206mm"
+   viewBox="0 0 31.41225 27.799206"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title3452">hlavička červíka - asset</title>
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient3519">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3517" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2645">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2643" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2639">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2637" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2589">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2587" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1809">
+      <stop
+         style="stop-color:#2aafff;stop-opacity:1;"
+         offset="0"
+         id="stop1807" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient2589"
+       id="linearGradient2591"
+       x1="43.535355"
+       y1="44.125259"
+       x2="75.608643"
+       y2="44.125259"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(9.3599046,4.8372617)" />
+    <linearGradient
+       xlink:href="#linearGradient2639"
+       id="linearGradient2641"
+       x1="44.245125"
+       y1="39.081062"
+       x2="51.322876"
+       y2="39.081062"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient2645"
+       id="linearGradient2647"
+       x1="36.289349"
+       y1="29.610609"
+       x2="41.765625"
+       y2="29.610609"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="g3499"
+     style="display:inline"
+     transform="translate(-52.762757,-30.81303)">
+    <ellipse
+       style="fill:#66ff00;fill-opacity:1;stroke:url(#linearGradient2591);stroke-width:0.265;stroke-dasharray:none;paint-order:fill markers stroke;image-rendering:auto"
+       id="ellipse3481"
+       cx="68.46888"
+       cy="48.962521"
+       rx="15.573623"
+       ry="9.5172138" />
+    <path
+       style="fill:#dbff2a;fill-opacity:1;stroke:url(#linearGradient2641);stroke-width:0.264583"
+       id="path3483"
+       d="m 50.535621,42.001592 -2.343162,-0.853089 -2.031129,1.446613 0.08726,-2.492099 -2.003464,-1.484691 2.397092,-0.687113 0.79292,-2.364202 1.394226,2.06744 2.493515,0.02353 -1.535413,1.964862 z"
+       transform="matrix(0.17818338,-0.9856967,1.0421635,0.168529,11.135129,87.35402)" />
+    <path
+       style="fill:#fff1c5;fill-opacity:1;stroke-width:0.264583"
+       id="path3485"
+       d="m 54.547009,42.788134 -5.531534,-0.881315 -3.861918,4.057114 -0.871158,-5.533142 -5.051943,-2.419185 4.993129,-2.538356 0.739645,-5.552253 3.957081,3.964353 5.509069,-1.012296 -2.547518,4.98846 z"
+       transform="matrix(-0.59453181,0.16018445,0.02635431,0.15500039,96.022663,40.605422)" />
+    <path
+       style="fill:#80ffba;fill-opacity:1;stroke:url(#linearGradient2647);stroke-width:0.264583"
+       id="path3487"
+       d="m 41.765626,29.692132 -1.814525,0.808152 -0.362946,1.952916 -1.329317,-1.475983 -1.96949,0.258302 0.992962,-1.72036 -0.854266,-1.793276 1.943001,0.412742 1.441525,-1.366607 0.207879,1.975448 z"
+       transform="rotate(17.136871,4.4449295,160.47474)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583"
+       id="path3489"
+       d="m 30.360699,34.922668 c 0.246476,0.319434 -0.308987,0.489843 -0.530919,0.40966 -0.601422,-0.217289 -0.598715,-1.023167 -0.288401,-1.471497 0.555078,-0.801956 1.721821,-0.753873 2.412076,-0.167142 1.012977,0.861051 0.915013,2.430452 0.04588,3.352655 -1.158413,1.229151 -3.14269,1.078785 -4.293233,-0.07538 -1.447841,-1.452394 -1.243936,-3.856664 0.196634,-5.233812 1.744724,-1.667911 4.571618,-1.409888 6.174391,0.317893 1.888812,2.03613 1.576343,5.287184 -0.439152,7.11497 -2.326969,2.11025 -6.003158,1.743133 -8.055548,-0.560411 -2.332056,-2.617434 -1.910159,-6.71942 0.68167,-8.996127 2.90764,-2.554122 7.435889,-2.077356 9.936705,0.802929 2.77638,3.197661 2.244679,8.152517 -0.924188,10.877284"
+       transform="matrix(0.2421822,0.754713,-0.34556261,0.22418199,69.386296,6.7250184)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583"
+       id="path3491"
+       d="m 30.360699,34.922668 c 0.246476,0.319434 -0.308987,0.489843 -0.530919,0.40966 -0.601422,-0.217289 -0.598715,-1.023167 -0.288401,-1.471497 0.555078,-0.801956 1.721821,-0.753873 2.412076,-0.167142 1.012977,0.861051 0.915013,2.430452 0.04588,3.352655 -1.158413,1.229151 -3.14269,1.078785 -4.293233,-0.07538 -1.447841,-1.452394 -1.243936,-3.856664 0.196634,-5.233812 1.744724,-1.667911 4.571618,-1.409888 6.174391,0.317893 1.888812,2.03613 1.576343,5.287184 -0.439152,7.11497 -2.326969,2.11025 -6.003158,1.743133 -8.055548,-0.560411 -2.332056,-2.617434 -1.910159,-6.71942 0.68167,-8.996127 2.90764,-2.554122 7.435889,-2.077356 9.936705,0.802929 2.77638,3.197661 2.244679,8.152517 -0.924188,10.877284"
+       transform="matrix(-0.41484837,0.09314962,-0.4481419,0.96235116,102.33985,1.2124129)" />
+    <ellipse
+       style="fill:#22241c;fill-opacity:1;stroke-width:0.622866;stroke-dasharray:none;paint-order:fill markers stroke"
+       id="ellipse3493"
+       cx="60.937698"
+       cy="46.701202"
+       rx="1.2388109"
+       ry="1.120829" />
+    <ellipse
+       style="fill:#22241c;fill-opacity:1;stroke-width:0.376841;stroke-dasharray:none;paint-order:fill markers stroke"
+       id="ellipse3495"
+       cx="75.980408"
+       cy="45.678692"
+       rx="1.0225105"
+       ry="0.96351957" />
+    <path
+       style="fill:#22241c;fill-opacity:1;stroke-width:0.264999;stroke-dasharray:none;paint-order:fill markers stroke"
+       id="path3497"
+       d="m 28.197695,43.063425 -0.02039,-0.572404 -0.483091,-0.307709 0.538088,-0.196273 0.143365,-0.554534 0.352945,0.4511 0.571696,-0.03501 -0.319956,0.475069 0.209962,0.532895 -0.550688,-0.157492 z"
+       transform="matrix(1.0439869,2.5317243,-2.4626736,1.015513,143.63692,-66.423274)" />
+  </g>
+  <metadata
+     id="metadata3450">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>hlavička červíka - asset</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -5,3 +5,38 @@ version:
 Node.js v18.12.1
 had to be uninstalled> npm uninstall node
 
+------------------
+
+červy/ čáry:
+
++ bodování: 3d nápisy - jezdící
+za každý krok 1 bod
+za projitý tunel 100 bodů
+za výhru 1000 bodů
+
++ při výhře se zobrazí se na půl obrazovky hlava daného červa
++ nabídka na pokračování
+
+zobrazit tlačítko pauza || a pokračování nahoře vpravo
+zobrazit tlačítko nápověda ? nahoře vpravo
+
++ obrázek na pozadí:
+nějaký, který souvisí s červem, zemí, hezký, mohou se střídat
+
++ časem přidat třetí barvu
+
++ předělat do TypeScriptu a do objektů
+
++ nasadit na internet
+
++ přidat do GitHub
+
++ přidat na můj profil
+
++ přidat responzivní zobrazení
+
++ přidat tlačítka na mobilní ovládání
+
+
+1.2.2023
++ plynulý jiný pohyb hlavě, zkusit CSS na obrázek

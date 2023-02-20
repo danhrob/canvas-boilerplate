@@ -1,18 +1,215 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <title>Canvas Boilerplatex | Chris Courses</title>
+    <title>Dokonči čáru</title>
     <style>
       body {
         margin: 0;
+        /*transform: skewY(2deg);*/
+        /*transform: perspective(600px) rotateY(45deg);*/
+            }
+      /* Safari syntax */
+      :-webkit-full-screen {
+        background-color: rgb(238, 238, 218);
       }
+
+      /* IE11 */
+      :-ms-fullscreen {
+        background-color: rgb(238, 238, 218);
+      }
+
+      /* Standard syntax */
+      :fullscreen {
+        background-color: rgb(238, 238, 218);
+      }
+
+      /* Style the button */
+      button {
+        padding: 12px;
+        font-size: 15px;
+        position:absolute; /*top:15px;left:10px; */
+        z-index:2;
+        opacity: 0.8;
+        transform: skewY(10deg);
+      }
+
+      .rotateimg180 {
+        /*
+        -webkit-transform:rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+        */
+        transform: scale(0.6);
+      }
+
+      .rotateimg2 {
+        /*
+        -webkit-transform:rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+        */
+        transform: scale(0.6);
+      }
+
+      .tunelimg {
+        /*width: 50px;
+        height: 50px;*/
+        transform: scale(1.0);
+      }
+
+
+/* subtle zoom to attention and then back */
+.pop-outin {
+  animation: 2s anim-popoutin ease infinite;
+}
+
+.pop-outin1 {
+  animation: 10s anim-popoutin ease infinite;
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    /* animate nothing to add pause at the end of animation */
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+
     </style>
   </head>
+  <script>
+    function forceFullScreen() {
+      top.resizeTo(window.screen.availWidth, window.screen.availHeight);
+      top.moveTo(0,0);
+      setTimeout("forceFullScreen()",250);
+      //alert("forceFullScreen");
+    }
+    
+window.addEventListener('unhandledrejection', function(event) {
+  console.log(event.promise); // [object Promise] - the promise that generated the error
+  console.log(event.reason); // Error: Whoops! - the unhandled error object
+                            // and now do something ...
+});
+let audio = new Audio("dnx-116856.mp3");
+    function playMusic() {
+    //audio.play();    //pro audio
+    //alert("audio play");
+  }
   
+  </script>
   <script src='./main.js' defer></script>
-  <body>
-    <canvas id="canvas"></canvas>
-   
+  
+  <body >
+    <div style="position:absolute; left:200px; top:200px; " id="rotated">
+      <img src="hlava_cerva_cute_modra.svg" class="rotateimg180"></img>
+    </div>
+    <div class='line' style="position:absolute; left:550px; top:300px; transform: scale(4);">
+      <h2 class='pop-outin1' >The winner is:  </h2><img src="hlava_cerva_cute_modra.svg"></img>
+    </div>
+    <div class='line' style="position:absolute; left:550px; top:400px; transform: scale(4); display:none;">
+      <h2 class='pop-outin1' >The winner is:  </h2><img src="hlava_cerva_cute_zel1.svg"></img>
+    </div>
+    <div style="position:absolute; left:300px; top:200px;" id="rotated2"><img src="hlava_cerva_cute_zel1.svg" class="rotateimg2"></img></div>
+    <div style="position:absolute; left:30px; top:300px;" id="tunel1"><img src="tunel150px.svg" class="tunelimg"></img></div>
+    <div style="position:absolute; right:0px; top:500px;" id="tunel2"><img src="tunel150px.svg" class="tunelimg"></img></div>
+    <button onclick="openFullscreen();" xid="openFsBt" style="display:visible; left:10px; top:20px;">Open Fullscreen</button>
+    <button onclick="closeFullscreen();" id="closeFsBt" style="display:visible; left:10px; top:80px;">Close Fullscreen</button>
+    <canvas id="canvas" style="display:block">
+    <!-- display:block pro zarovnani jezdcu-->
+    </canvas> 
+   <script>
+    //window.addEventListener("load", (event) => {
+    //  audio.play();
+    //});
+    //var elem = document.documentElement;
+    var elem = document.documentElement;
+
+function openFullscreen() {
+  
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+  document.getElementById('openFsBt').style.visibility="hidden";
+  document.getElementById('closeFsBt').style.visibility="visible";
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+  document.getElementById('openFsBt').style.visibility="visible";
+  document.getElementById('closeFsBt').style.visibility="hidden";
+}
+
+function poNacteniStranky() {
+  closeFullscreen();
+  openFullscreen();
+}
+
+window.onload = function() {
+  //alert("let's go!");
+  //document.getElementById('closeFsBt').click();
+  //document.getElementById('openFsBt').click();
+  //closeFullscreen();
+  //openFullscreen();
+  //poNacteniStranky();
+  //forceFullScreen();
+ };
+
+ /*
+ // Access DOM element object
+const rotated = document.getElementById('rotated');
+
+// Variable to hold the current angle of rotation
+let rotation = 0;
+
+// How much to rotate the image at a time
+//const angle = 90;
+
+function rotateImage() {
+  // Ensure angle range of 0 to 359 with "%" operator,
+  // e.g., 450 -> 90, 360 -> 0, 540 -> 180, etc.
+  rotation = (rotation + angle) % 360;
+
+  rotated.style.transform = `rotate(${rotation}deg)`;
+  }
+
+rotateImage();//doplnit do main.js
+*/
+    </script>
   </body>
 </html>
